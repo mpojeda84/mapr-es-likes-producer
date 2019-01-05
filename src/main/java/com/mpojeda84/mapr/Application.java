@@ -11,22 +11,9 @@ public class Application {
 
     private static Scanner in;
 
-    private static String TOPIC = "/user/mapr/Streams/test:test-1";
+    private static String TOPIC = "/user/mapr/Streams/test2:topic-2";
 
     public static void main(String[] argv)throws Exception {
-
-//        String topicName = argv[0];
-//        in = new Scanner(System.in);
-//        System.out.println("Enter message(type exit to quit)");
-//
-//        String line = in.nextLine();
-//        while(!line.equals("exit")) {
-//            //TODO: Make sure to use the ProducerRecord constructor that does not take parition Id
-//            ProducerRecord<String, String> rec = new ProducerRecord<String, String>(TOPIC,line);
-//            getProducer().send(rec);
-//            line = in.nextLine();
-//        }
-//        in.close();
 
         ObjectMapper objectMapper = new ObjectMapper();
         KafkaProducer<String, String> producer = getProducer();

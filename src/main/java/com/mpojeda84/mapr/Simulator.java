@@ -57,6 +57,7 @@ public class Simulator {
         Like like = new Like();
         like.setSource(Integer.toString(rand.nextInt(userIdSequence)));
         like.setTarget(Integer.toString(rand.nextInt(userIdSequence)));
+        like.set_id(randomString(50));
         return like;
     }
 
